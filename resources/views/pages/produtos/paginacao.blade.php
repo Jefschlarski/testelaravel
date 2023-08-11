@@ -6,12 +6,16 @@
     <h1 >Produtos</h1>
     </div>
     <div>
-        <form action="" method="get">
+        <form action="{{route('produto.index')}}" method="get">
             <input type="text" name="pesquisar" placeholder="Digite um nome">
             <button>Pesquisar</button>
             <a type="button" class="btn btn-success float-right">Incluir produto</a>
         </form>
+       
       <div class="mt-4 table-responsive small">
+        @if($findProduto->isEmpty())
+        <p>Não Encontrado</p>
+        @else
         <table class="table table-striped table-sm">
           <thead>
             <tr>
@@ -27,13 +31,14 @@
               <td class="align-middle">{{'R$' . number_format($produto->valor, 2, ',', '.' )}}</td>
               <td>
                 <a href="" class="btn btn-light btn-sm">Editar</a>
-                <a href="" class="btn btn-danger btn-sm">Excluir</a>
+                <a href="{{route('produto.delete')}}" class="btn btn-danger btn-sm">Excluir</a>
               </td>
               </tr>  
             @endforeach
            
           </tbody>
         </table>
+        @endif
       </div>
     </div>
 @endsection

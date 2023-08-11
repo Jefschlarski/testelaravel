@@ -11,13 +11,13 @@
     <link href="{{ asset('css/bootstrap.css')}}" rel="stylesheet" >
     <link href="{{ asset('css/dashboard.css')}}" rel="stylesheet">
     <!-- Favicons -->
-<link rel="apple-touch-icon" href=" {{ asset('icones/apple-touch-icon.png')}}" sizes="180x180">
-<link rel="icon" href="{{ asset('icones/favicon-32x32.png')}}" sizes="32x32" type="image/png">
-<link rel="icon" href="{{ asset('icones/favicon-16x16.png')}}" sizes="16x16" type="image/png">
-<link rel="manifest" href="{{ asset('icones/manifest.json')}}">
-<link rel="mask-icon" href="{{ asset('icones/safari-pinned-tab.svg')}}" color="#712cf9">
-<link rel="icon" href="{{ asset('icones/favicon.ico')}}">
-<meta name="theme-color" content="#712cf9">
+    <link rel="apple-touch-icon" href=" {{ asset('icones/apple-touch-icon.png')}}" sizes="180x180">
+    <link rel="icon" href="{{ asset('icones/favicon-32x32.png')}}" sizes="32x32" type="image/png">
+    <link rel="icon" href="{{ asset('icones/favicon-16x16.png')}}" sizes="16x16" type="image/png">
+    <link rel="manifest" href="{{ asset('icones/manifest.json')}}">
+    <link rel="mask-icon" href="{{ asset('icones/safari-pinned-tab.svg')}}" color="#712cf9">
+    <link rel="icon" href="{{ asset('icones/favicon.ico')}}">
+    <meta name="theme-color" content="#712cf9">
 
 
     <style>
@@ -126,6 +126,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js" ></script>
     <script src="{{asset("js/dashboard.js")}}"></script>
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       feather.replace()
     </script>
