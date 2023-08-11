@@ -125,7 +125,6 @@
     <script src="{{asset("js/bootstrap.bundle.min.js")}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js" ></script>
     <script src="{{asset("js/dashboard.js")}}"></script>
-    <script src="{{asset("js/color-modes.js")}}"></script>
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script>
       feather.replace()
