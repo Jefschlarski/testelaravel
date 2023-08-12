@@ -1,3 +1,5 @@
+
+
 @extends('index')
 @section('content')
 <form method="POST" action="{{route('cadastrar.produto')}}">
@@ -14,7 +16,7 @@
           </div>
           <div class="mb-3">
             <label class="form-label">Valor</label>
-            <input class="form-control @error('valor') is-invalid @enderror"  name="valor">
+            <input id="mascara_valor" class="form-control @error('valor') is-invalid @enderror"  name="valor">
             @if ($errors->has('valor'))
                 <div class="invalid-feedback">{{ $errors->first('valor')}}</div>
             @endif
@@ -22,3 +24,10 @@
           <button type="submit" class="btn btn-success mt-2">Cadastrar</button>
   </form>    
 @endsection
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script>
+  $(document).ready(function(){
+  $('#mascara_valor').mask("#.##0,00", {reverse: true});
+});
+</script>
