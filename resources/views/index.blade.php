@@ -122,15 +122,15 @@
 </div>
     @yield ('scripts')
     
-    <script src="{{asset("js/bootstrap.bundle.min.js")}}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js" ></script>
-    <script src="{{asset("js/dashboard.js")}}"></script>
-    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js" ></script>
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      feather.replace()
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/projeto.js"></script>
   </body>
     
 
