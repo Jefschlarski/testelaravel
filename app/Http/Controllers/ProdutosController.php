@@ -28,16 +28,39 @@ class ProdutosController extends Controller
         $buscaRegistro->delete();
         return response() -> json(['sucess' => true]);
     }
-    
+
+    //Cadastrar produto
+
     public function cadastrarProduto(FormRequestProduto $request){
         if($request->method() == "POST"){
+          //cria os dados
            $data = $request->all();
            $componentes = new Componentes();
            $data['valor'] = $componentes->formatacaoMascaraDinheiroDecimal($data['valor']);
            Produto::create($data);
            return redirect()->route('produto.index');
         };
+        //mostra os dados
         return view('pages.produtos.create');
     }
+    
+    //Editar Produto
+
+    public function atualizarProduto(FormRequestProduto $request, $id){
+        if($request->method() == "PUT"){
+          //atualizar os dados
+           $data = $request->all();
+           $componentes = new Componentes();
+           $data['valor'] = $componentes->formatacaoMascaraDinheiroDecimal($data['valor']);
+           $buscaRegistro = Produto::find($id);
+           $buscaRegistro->update($data);
+           return redirect()->route('produto.index');
+        };
+        //mostra os dados
+        $findProduto = Produto::where('id', '=', $id)->first();
+        return view('pages.produtos.atualiza', compact('findProduto'));
+    }
+
+
 
 }
