@@ -3,6 +3,8 @@
 use App\Http\Controllers\ClientesController;
 use App\Http\Controllers\ProdutosController;
 use App\Http\Controllers\VendasController;
+use App\Http\Controllers\DashboardController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,8 +18,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+//Dashboard
+Route::prefix('dashboard')->group(function () {
+    Route::get('/',[DashboardController::class, 'index']) -> name('dashboard.index');
 });
 
 //PRODUTOS

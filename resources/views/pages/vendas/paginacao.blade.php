@@ -22,6 +22,7 @@
               <th scope="col">Numero da venda</th>
               <th scope="col">Produto</th>
               <th scope="col">Cliente</th>
+              <th scope="col">Ações</th>
             </tr>
           </thead>
           <tbody>
@@ -30,6 +31,9 @@
               <td class="align-middle">{{$venda->numero_da_venda}}</td>
               <td class="align-middle">{{$venda->produto->nome}}</td>
               <td class="align-middle">{{$venda->cliente->nome}}</td>
+              <td>
+                <a href="" class="btn btn-light btn-sm">Enviar Email</a>
+              </td>
               </tr>  
             @endforeach
            

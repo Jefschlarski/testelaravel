@@ -2,9 +2,9 @@
       <div class="sidebar-sticky">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" href="#">
+            <a class="nav-link" href="{{route('dashboard.index')}}">
               <span data-feather="home"></span>
-              Tabela <span class="sr-only">(Atual)</span>
+              Dashboard<span class="sr-only">(Atual)</span>
             </a>
           </li>
           <li class="nav-item">
