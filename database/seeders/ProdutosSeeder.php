@@ -13,7 +13,7 @@ class ProdutosSeeder extends Seeder
     {
         Produto::create(
             [
-                'nome' => 'Victor Padovam',
+                'nome' => 'cadeira',
                 'valor' => '20.00'
             ]
             );

@@ -38,7 +38,7 @@
         <div class="card-body">
           <h5 class="card-title">Usuarios Cadastrados</h5>
           <p class="card-text">Total de usuarios cadastrados no sistema</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-primary">{{$totalDeUsuarios}}</a>
         </div>
       </div>
     </div>

@@ -25,6 +25,12 @@
               Clientes
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('usuario.index') }}">
+              <span data-feather="users"></span>
+              Usuario
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

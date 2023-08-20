@@ -41,4 +41,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getUsuarioPesquisarIndex(string $search = ''){
+        $user = $this->where(function($query) use ($search){
+            if($search){
+                $query->where('numero_do_user', '=', $search)
+                      ->orWhere('numero_do_user', 'LIKE', "%{$search}%");
+            }
+        })->get();
+        return $user;
+    }
 }
